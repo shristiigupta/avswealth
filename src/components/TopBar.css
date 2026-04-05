@@ -1,0 +1,48 @@
+.topbar {
+  background: var(--navy);
+  border-bottom: 1px solid rgba(192,138,40,0.2);
+  height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.topbar-left,
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.topbar-left span,
+.topbar-right a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.65);
+  white-space: nowrap;
+}
+
+.topbar-right a {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.topbar-right a:hover { color: var(--gold); }
+
+.topbar-left svg,
+.topbar-right svg {
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+  .topbar { display: none; }
+}

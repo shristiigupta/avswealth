@@ -1,0 +1,41 @@
+.breadcrumb-nav {
+  background: rgba(212, 175, 55, 0.05);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  padding: 0.75rem 1.5rem;
+}
+
+.breadcrumb-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+}
+
+.breadcrumb-item a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.breadcrumb-item a:hover {
+  opacity: 0.75;
+}
+
+.breadcrumb-item.active span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.separator {
+  color: rgba(255, 255, 255, 0.3);
+}
