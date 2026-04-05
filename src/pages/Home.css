@@ -520,3 +520,96 @@
   .features-grid { grid-template-columns: 1fr; }
   .products-grid { grid-template-columns: 1fr; }
 }
+
+/* ─── Feature card SVG icons ─────────────────────────────────── */
+.feature-icon-wrap {
+  width: 52px;
+  height: 52px;
+  background: var(--bg-gold);
+  border: 1.5px solid var(--gold-pale);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.feature-icon-wrap svg {
+  width: 24px;
+  height: 24px;
+  color: var(--gold);
+  transition: color 0.2s;
+}
+
+.feature-card:hover .feature-icon-wrap {
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.feature-card:hover .feature-icon-wrap svg {
+  color: #E8B850;
+}
+
+/* ─── Product card SVG icons ─────────────────────────────────── */
+.product-card-icon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  background: var(--bg-gold);
+  border: 1.5px solid var(--gold-pale);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.product-card-icon svg {
+  width: 20px;
+  height: 20px;
+  color: var(--gold);
+  transition: color 0.2s;
+}
+
+.product-card:hover .product-card-icon {
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.product-card:hover .product-card-icon svg {
+  color: #E8B850;
+}
+
+.product-card-arrow {
+  color: var(--gold);
+  flex-shrink: 0;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.product-card:hover .product-card-arrow {
+  transform: translateX(4px);
+}
+
+/* hero outline button (white on dark bg) */
+.btn-outline-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: var(--radius);
+  padding: 12px 28px;
+  border: 2px solid rgba(255,255,255,0.5);
+  background: transparent;
+  color: var(--white);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.btn-outline-hero:hover {
+  background: var(--white);
+  border-color: var(--white);
+  color: var(--navy);
+}

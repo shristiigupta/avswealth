@@ -1,0 +1,144 @@
+.pp-intro-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.pp-tagline {
+  font-size: 1.05rem;
+  color: var(--navy-mid);
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-family: var(--font-display);
+  font-style: italic;
+}
+
+.pp-para {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+/* Reasons card */
+.pp-reasons-col {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  position: sticky;
+  top: 88px;
+}
+
+.pp-icon-wrap {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.pp-reasons-title {
+  font-size: 1.1rem;
+  color: var(--navy);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--gold-pale);
+}
+
+.pp-reasons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pp-reason {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.pp-reason-dot {
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  background: var(--gold);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.pp-reason strong {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--navy);
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.pp-reason p {
+  font-size: 0.845rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* CTA */
+.pp-cta-section {
+  background: var(--navy);
+  padding: 70px 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.pp-cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(192,138,40,0.15) 0%, transparent 60%);
+}
+
+.pp-cta-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.pp-cta-inner h2 {
+  color: var(--white);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.pp-cta-inner p {
+  color: rgba(255,255,255,0.65);
+  max-width: 520px;
+  line-height: 1.7;
+}
+
+.pp-cta-inner .btn { margin-top: 8px; }
+
+.pp-cta-inner > div, .pp-cta-inner .btn + .btn {
+  margin-top: 0;
+}
+
+.pp-cta-inner {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pp-cta-inner h2, .pp-cta-inner p {
+  flex: 0 0 100%;
+}
+
+@media (max-width: 900px) {
+  .pp-intro-grid { grid-template-columns: 1fr; }
+  .pp-reasons-col { position: static; }
+}
