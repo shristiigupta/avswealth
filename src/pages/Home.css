@@ -613,3 +613,205 @@
   border-color: var(--white);
   color: var(--navy);
 }
+
+/* ─── About visual column ────────────────────────────────────── */
+.about-visual-col { display: flex; justify-content: center; align-items: center; }
+
+.about-visual-card {
+  width: 100%;
+  max-width: 420px;
+  background: linear-gradient(145deg, var(--navy) 0%, #1e3a70 100%);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Top stat row */
+.avc-stat-row {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  gap: 16px;
+}
+
+.avc-stat {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avc-stat-icon { color: #E8B850; flex-shrink: 0; }
+
+.avc-stat strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--white);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.avc-stat span {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.avc-divider {
+  width: 1px;
+  height: 36px;
+  background: rgba(255,255,255,0.15);
+  flex-shrink: 0;
+}
+
+/* Centre illustration */
+.avc-illustration {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avc-rings {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avc-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(192,138,40,0.18);
+}
+.avc-ring.r1 { width: 80px;  height: 80px; }
+.avc-ring.r2 { width: 130px; height: 130px; border-color: rgba(192,138,40,0.12); }
+.avc-ring.r3 { width: 185px; height: 185px; border-color: rgba(192,138,40,0.07); }
+
+.avc-center-icon {
+  position: relative;
+  z-index: 2;
+  width: 64px;
+  height: 64px;
+  background: var(--gold);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 32px rgba(192,138,40,0.4);
+}
+
+.avc-center-icon svg { color: var(--white); }
+
+/* Floating labels */
+.avc-float {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(6px);
+  border-radius: 100px;
+  padding: 5px 11px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  white-space: nowrap;
+}
+
+.avc-float svg { color: #E8B850; flex-shrink: 0; }
+
+.avc-float.top-left    { top: 12px;    left: 12px; }
+.avc-float.top-right   { top: 12px;    right: 12px; }
+.avc-float.bottom-left { bottom: 12px; left: 12px; }
+.avc-float.bottom-right{ bottom: 12px; right: 12px; }
+
+/* AUM badge at bottom */
+.avc-aum-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(192,138,40,0.15);
+  border: 1px solid rgba(192,138,40,0.3);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+}
+
+.avc-aum-badge svg { color: #E8B850; flex-shrink: 0; }
+
+.avc-aum-badge strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.avc-aum-badge span {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+/* ─── USP SVG icons ──────────────────────────────────────────── */
+.usp-icon-wrap {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  background: var(--gold-pale);
+  border: 1.5px solid rgba(192,138,40,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+}
+
+/* ─── Facts SVG icon ─────────────────────────────────────────── */
+.fact-svg-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  color: #E8B850;
+}
+
+/* ─── Callback perks SVG icons ───────────────────────────────── */
+.callback-perks li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.75);
+  font-weight: 500;
+}
+.callback-perks svg { color: #E8B850; flex-shrink: 0; }
+
+/* Form success icon */
+.form-success-icon {
+  width: 64px;
+  height: 64px;
+  background: #ECFDF5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #16A34A;
+}

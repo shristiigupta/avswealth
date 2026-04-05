@@ -158,3 +158,28 @@
   .contact-strip-grid { grid-template-columns: 1fr; }
   .form-row-2 { grid-template-columns: 1fr; }
 }
+
+.csi-icon-wrap {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  background: var(--gold-pale);
+  border: 1.5px solid rgba(192,138,40,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.cs-icon-wrap {
+  width: 64px;
+  height: 64px;
+  background: #ECFDF5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #16A34A;
+}
