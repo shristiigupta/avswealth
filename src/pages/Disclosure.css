@@ -30,18 +30,19 @@
   margin-bottom: 12px;
 }
 
-/* TABLE WRAPPER (card style like contact sections) */
+/* TABLE WRAPPER */
 .table-wrap {
   margin: 24px 0;
   background: var(--bg-alt);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  overflow: hidden;
+  overflow-x: auto; /* 🔥 IMPORTANT for mobile scroll */
 }
 
 /* TABLE */
 .dis-table {
   width: 100%;
+  min-width: 600px; /* 🔥 prevents squishing */
   border-collapse: collapse;
   font-size: 0.9rem;
 }
@@ -67,17 +68,16 @@
   border-bottom: 1px solid var(--border);
 }
 
-/* Zebra rows like premium UI */
+/* Zebra rows */
 .dis-table tr:nth-child(even) td {
   background: #fcfcfd;
 }
 
-/* Remove last border */
 .dis-table tr:last-child td {
   border-bottom: none;
 }
 
-/* LIST (Important notes) */
+/* LIST */
 .dis-list {
   margin-top: 16px;
   padding-left: 18px;
@@ -90,13 +90,12 @@
   font-size: 0.9rem;
 }
 
-/* Highlight keywords like contact success tone */
 .dis-list strong {
   color: var(--navy);
   font-weight: 600;
 }
 
-/* Optional highlight box (like success card style) */
+/* Card box */
 .dis-note-box {
   margin-top: 20px;
   padding: 20px;
@@ -105,19 +104,69 @@
   border-radius: var(--radius-md);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* ========================= */
+/* 🔥 RESPONSIVE BREAKPOINTS */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .disclosure {
+    padding: 50px 20px;
+  }
+
   .dis-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .dis-subtitle {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
+  }
+
+  .dis-desc {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .disclosure {
+    padding: 40px 16px;
+  }
+
+  .dis-title {
+    font-size: 1.7rem;
+  }
+
+  .dis-subtitle {
+    font-size: 1rem;
+  }
+
+  .dis-desc {
+    font-size: 0.88rem;
   }
 
   .dis-table th,
   .dis-table td {
-    padding: 12px;
+    padding: 10px 12px;
+    font-size: 0.82rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .dis-title {
+    font-size: 1.5rem;
+  }
+
+  .dis-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .dis-desc {
+    font-size: 0.85rem;
+  }
+
+  .dis-list li {
     font-size: 0.85rem;
   }
 }
