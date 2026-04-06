@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="footer-brand">
             <div className="footer-logo">
               <span className="footer-logo-icon">AVS</span>
-              <span>AVS Financial Services</span>
+              <span>Wealth Financial Services</span>
             </div>
             <p>
               Your trusted partner for comprehensive financial planning and
@@ -61,6 +61,7 @@ export default function Footer() {
               <li><Link to="/#about">About Us</Link></li>
               <li><Link to="/#services">Services</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>
+              <li><Link to="/disclosure">Commission Disclosure</Link></li>
             </ul>
 
             <h4 className="footer-heading" style={{ marginTop: "2rem" }}>Business Hours</h4>
@@ -75,9 +76,9 @@ export default function Footer() {
       {/* Copyright */}
       <div className="footer-bottom">
         <div className="container">
-          <p>© {new Date().getFullYear()} AVS Financial Services. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} AVS Wealth Financial Services. All Rights Reserved.</p>
           <p className="footer-disclaimer">
-            Investments are subject to market risks. Please read all scheme-related documents carefully before investing.
+            Mutual Fund investments are subject to market risks, read all scheme related documents carefully.
           </p>
         </div>
       </div>

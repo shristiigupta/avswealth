@@ -23,6 +23,20 @@
     url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+.hero-founder {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 0.99rem;
+  color: rgba(255,255,255,0.55);
+  font-weight: 500;
+}
+
+.hero-founder svg { color: #E8B850; }
+.hero-founder span:nth-child(2) { color: rgba(255,255,255,0.85); font-weight: 900; }
+.hero-founder-dot { color: rgba(255,255,255,0.3); }
+
 .hero-content {
   position: relative;
   z-index: 1;

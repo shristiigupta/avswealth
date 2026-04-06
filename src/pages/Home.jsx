@@ -68,36 +68,36 @@ export default function Home() {
   };
 
   const features = [
-    { Icon: IconZap,         title: "Fast Executions",      desc: "Quick and efficient processing of your investments — we value your time as much as your money." },
-    { Icon: IconCompass,     title: "Expert Guidance",      desc: "18+ years of experience means our advice is rooted in deep market knowledge and proven strategies." },
-    { Icon: IconShield,      title: "Financial Security",   desc: "We work only with SEBI-registered, government-backed institutions — your capital is always protected." },
-    { Icon: IconUsers,       title: "Personal Relationship",desc: "You're not a ticket number. Your advisor knows your name, your goals, and your family situation." },
-    { Icon: IconBarChart,    title: "Portfolio Monitoring", desc: "Regular reviews and timely rebalancing keep your investments aligned with your evolving goals." },
-    { Icon: IconHeadphones,  title: "Responsive Support",   desc: "Reach us on call, WhatsApp, or email — we respond promptly and never leave you waiting." },
+    { Icon: IconZap, title: "Fast Executions", desc: "Quick and efficient processing of your investments — we value your time as much as your money." },
+    { Icon: IconCompass, title: "Expert Guidance", desc: "18+ years of experience means our advice is rooted in deep market knowledge and proven strategies." },
+    { Icon: IconShield, title: "Financial Security", desc: "We work only with SEBI-registered, government-backed institutions — your capital is always protected." },
+    { Icon: IconUsers, title: "Personal Relationship", desc: "You're not a ticket number. Your advisor knows your name, your goals, and your family situation." },
+    { Icon: IconBarChart, title: "Portfolio Monitoring", desc: "Regular reviews and timely rebalancing keep your investments aligned with your evolving goals." },
+    { Icon: IconHeadphones, title: "Responsive Support", desc: "Reach us on call, WhatsApp, or email — we respond promptly and never leave you waiting." },
   ];
 
   const products = [
-    { Icon: IconTrendUp,    label: "Mutual Fund",                  to: "/products/mutual-fund" },
-    { Icon: IconBriefcase,  label: "Demat Account",               to: "/products/demat-account" },
-    { Icon: IconLock,       label: "Corporate Fixed Deposit",     to: "/products/corporate-fd" },
-    { Icon: IconUmbrella,   label: "Life Insurance",              to: "/products/life-insurance" },
-    { Icon: IconHeart,      label: "Health Insurance",            to: "/products/health-insurance" },
-    { Icon: IconDollarSign, label: "Capital Gain Bonds",          to: "/products/capital-gain-bonds" },
-    { Icon: IconBank,       label: "RBI Bonds",                   to: "/products/rbi-bonds" },
-    { Icon: IconFileText,   label: "Physical Shares",             to: "/products/physical-shares" },
-    { Icon: IconScale,      label: "Shares Transferred in IEPF",  to: "/products/iepf" },
+    { Icon: IconTrendUp, label: "Mutual Fund", to: "/products/mutual-fund" },
+    { Icon: IconBriefcase, label: "Demat Account", to: "/products/demat-account" },
+    { Icon: IconLock, label: "Corporate Fixed Deposit", to: "/products/corporate-fd" },
+    { Icon: IconUmbrella, label: "Life Insurance", to: "/products/life-insurance" },
+    { Icon: IconHeart, label: "Health Insurance", to: "/products/health-insurance" },
+    { Icon: IconDollarSign, label: "Capital Gain Bonds", to: "/products/capital-gain-bonds" },
+    { Icon: IconBank, label: "RBI Bonds", to: "/products/rbi-bonds" },
+    { Icon: IconFileText, label: "Physical Shares", to: "/products/physical-shares" },
+    { Icon: IconScale, label: "Shares Transferred in IEPF", to: "/products/iepf" },
   ];
 
   const usps = [
-    { Icon: IconTag,         title: "No Hidden Cost",     desc: "Transparent pricing — no surprises, ever." },
-    { Icon: IconUsers,       title: "Dedicated Support",  desc: "Personalised assistance whenever needed." },
-    { Icon: IconHeadphones,  title: "Always Reachable",   desc: "Quick response — just a call or message away." },
+    { Icon: IconTag, title: "No Hidden Cost", desc: "Transparent pricing — no surprises, ever." },
+    { Icon: IconUsers, title: "Dedicated Support", desc: "Personalised assistance whenever needed." },
+    { Icon: IconHeadphones, title: "Always Reachable", desc: "Quick response — just a call or message away." },
   ];
 
   const factIcons = {
     clients: <IconUsers width="26" height="26" />,
-    years:   <IconCheckCircle width="26" height="26" />,
-    aum:     <IconBarChart width="26" height="26" />,
+    years: <IconCheckCircle width="26" height="26" />,
+    aum: <IconBarChart width="26" height="26" />,
   };
 
   return (
@@ -126,6 +126,15 @@ export default function Home() {
             <div className="hstat"><span className="hstat-num">300+</span><span className="hstat-lbl">Happy Clients</span></div>
             <div className="hstat"><span className="hstat-num">18</span><span className="hstat-lbl">Years Experience</span></div>
             <div className="hstat"><span className="hstat-num">₹30Cr+</span><span className="hstat-lbl">Assets Managed</span></div>
+          </div>
+          <div className="hero-founder">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            <span>Varun Agrawal</span>
+            <span className="hero-founder-dot">·</span>
+            <span>AMFI Registered Mutual Fund Distributor</span>
           </div>
         </div>
       </section>
@@ -208,7 +217,7 @@ export default function Home() {
             <div className="about-tabs">
               <div className="tab-buttons">
                 <button className={activeTab === "mission" ? "active" : ""} onClick={() => setActiveTab("mission")}>Mission</button>
-                <button className={activeTab === "vision"  ? "active" : ""} onClick={() => setActiveTab("vision")}>Vision</button>
+                <button className={activeTab === "vision" ? "active" : ""} onClick={() => setActiveTab("vision")}>Vision</button>
               </div>
               <div className="tab-content">
                 {activeTab === "mission" && (
@@ -224,7 +233,7 @@ export default function Home() {
             <div className="about-usps">
               {usps.map(({ Icon, title, desc }) => (
                 <div key={title} className="usp-item">
-                  
+
                   <div><strong>{title}</strong><span>{desc}</span></div>
                 </div>
               ))}
@@ -236,9 +245,9 @@ export default function Home() {
       {/* ── FACTS ─────────────────────────────────────────────── */}
       <section className="facts-section" ref={factsRef}>
         <div className="container facts-grid">
-          <FactItem iconSvg={factIcons.clients} value={300} suffix="+"    label="Clients Served"      started={factsStarted} />
-          <FactItem iconSvg={factIcons.years}   value={18}  suffix=" Yrs" label="Industry Experience" started={factsStarted} />
-          <FactItem iconSvg={factIcons.aum}     value={30}  suffix=" Cr+" label="AUM Managed"         started={factsStarted} />
+          <FactItem iconSvg={factIcons.clients} value={300} suffix="+" label="Clients Served" started={factsStarted} />
+          <FactItem iconSvg={factIcons.years} value={18} suffix=" Yrs" label="Industry Experience" started={factsStarted} />
+          <FactItem iconSvg={factIcons.aum} value={30} suffix=" Cr+" label="AUM Managed" started={factsStarted} />
         </div>
       </section>
 
@@ -279,7 +288,7 @@ export default function Home() {
                 <span className="product-card-label">{label}</span>
                 <svg className="product-card-arrow" width="16" height="16" viewBox="0 0 24 24"
                   fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                  <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                  <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
                 </svg>
               </Link>
             ))}

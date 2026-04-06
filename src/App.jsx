@@ -5,12 +5,14 @@ import TopBar    from "./components/TopBar";
 import Navbar    from "./components/Navbar";
 import Footer    from "./components/Footer";
 import BackToTop from "./components/BackToTop";
+import ScrollToTop from "./components/ScrollToTop";
 
 // Pages
 import Home     from "./pages/Home";
 import About    from "./pages/About";
 import Contact  from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Disclosure from "./pages/Disclosure";
 
 // Product pages
 import MutualFund       from "./pages/products/MutualFund";
@@ -28,6 +30,7 @@ import "./index.css";
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="app-wrapper">
         <TopBar />
         <Navbar />
@@ -37,6 +40,7 @@ export default function App() {
             <Route path="/"       element={<Home />} />
             <Route path="/about"  element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/disclosure" element={<Disclosure />} />
 
             {/* Product pages */}
             <Route path="/products/mutual-fund"        element={<MutualFund />} />
