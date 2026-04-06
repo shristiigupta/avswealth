@@ -108,7 +108,7 @@ export default function Home() {
         <div className="hero-bg" />
         <div className="container hero-content">
           <div className="hero-text">
-            <div className="hero-badge">Welcome to AVS Financial Services</div>
+            <div className="hero-badge">Welcome to AVS Wealth Financial Services</div>
             <h1 className="hero-title">Your Financial Status<br /><span>Is Our Goal</span></h1>
             <p className="hero-desc">
               Trusted financial advisors since 2018 — helping 300+ families across India invest wisely,
