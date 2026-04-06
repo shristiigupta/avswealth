@@ -19,7 +19,7 @@ const contactInfo = [
     Icon: IconMail,
     title: "Email Us",
     lines: ["varunagrawal@avsfs.in"],
-    href: "mailto:varunagrawal@avsfs.in",
+    href: "mailto:varunagrawal@avswealth.in",
   },
   {
     Icon: IconClock,
@@ -41,7 +41,7 @@ export default function Contact() {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ access_key: "c5c798a9-7135-4f67-a832-b46f7dc0f2d3", ...formData }),
+        body: JSON.stringify({ access_key: "bece8984-0173-49d2-8899-e512c2cc499d", ...formData }),
       });
       if (res.ok) { setStatus("success"); setFormData({ name: "", email: "", subject: "", message: "" }); }
       else setStatus("error");

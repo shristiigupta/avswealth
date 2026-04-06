@@ -49,7 +49,7 @@ export default function Navbar() {
       <div className="container navbar-inner">
         <Link to="/" className="navbar-logo">
           <span className="logo-icon">AVS</span>
-          <span className="logo-text">Financial Services</span>
+          <span className="logo-text">Wealth</span>
         </Link>
 
         <button
