@@ -6,13 +6,7 @@ export default function Disclosure() {
       
       <h1 className="dis-title">Commission Disclosure</h1>
 
-      <p className="dis-desc">
-        The bank earns commissions on investments made under its ARN code, with rates subject to clawback as per SEBI regulations and AMC interpretations. In line with SEBI circular SEBI/IMD/CIR.4/168230/09 and RBI guidelines on mutual fund marketing and distribution, the table presents a comparative commission structure across different fund houses. These commission rates are updated periodically based on actual rates provided by AMCs, on a best-effort basis.
-      </p>
-
-      <p className="dis-desc">
-        For detailed scheme-wise commission structures, please select the respective AMC.
-      </p>
+      
 
       <h2 className="dis-subtitle">Mandatory Declaration</h2>
 

@@ -195,3 +195,40 @@
 
   .nav-dropdown.open .dropdown-panel { display: block; }
 }
+
+@media (max-width: 991px) {
+
+  .dropdown-panel {
+    position: static;
+    transform: none;
+    opacity: 1;
+    pointer-events: all;
+    box-shadow: none;
+
+    border: 1px solid var(--border);
+    background: var(--bg-alt);
+
+    margin-top: 6px;
+    width: 100%;
+
+    display: none;
+
+    /* 🔥 ADD THIS */
+    flex-direction: column;
+    gap: 2px;
+    padding: 6px;
+    border-radius: var(--radius);
+  }
+
+  .nav-dropdown.open .dropdown-panel { 
+    display: flex;   /* 🔥 CHANGE from block → flex */
+  }
+
+  .dropdown-item {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+  }
+
+}
