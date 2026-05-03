@@ -829,3 +829,43 @@
   justify-content: center;
   color: #16A34A;
 }
+
+.hero-founder {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.hero-founder svg { color: #E8B850; flex-shrink: 0; margin-top: 2px; }
+
+.hero-founder-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hero-founder-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-founder-name span:first-child {
+  font-size: 0.99rem;
+  font-weight: 900;
+  color: rgba(255,255,255,0.85);
+}
+
+.hero-founder-arn {
+  font-size: 0.99rem;
+  font-weight: 900;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.04em;
+}
+
+.hero-founder-amfi {
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.427);
+}

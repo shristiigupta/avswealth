@@ -132,9 +132,13 @@ export default function Home() {
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
               <circle cx="12" cy="7" r="4" />
             </svg>
-            <span>Varun Agrawal</span>
-            <span className="hero-founder-dot">·</span>
-            <span>AMFI Registered Mutual Fund Distributor</span>
+            <div className="hero-founder-text">
+              <div className="hero-founder-name">
+                <span>Varun Agrawal</span>
+                <span className="hero-founder-arn">ARN-130840</span>
+              </div>
+              <span className="hero-founder-amfi">AMFI Registered Mutual Fund Distributor</span>
+            </div>
           </div>
         </div>
       </section>
