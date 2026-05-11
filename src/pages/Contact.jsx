@@ -7,7 +7,7 @@ const contactInfo = [
   {
     Icon: IconMapPin,
     title: "Our Office",
-    lines: ["164, Block-E, Nehru Nagar - IIIrd,", "Ghaziabad, Uttar Pradesh - 201001"],
+    lines: ["2nd Floor, H. No. 164, Block -E, Nehru Nagar -III, Ghaziabad -201001, Uttar Pradesh"],
   },
   {
     Icon: IconPhone,
@@ -18,7 +18,7 @@ const contactInfo = [
   {
     Icon: IconMail,
     title: "Email Us",
-    lines: ["varunagrawal@avsfs.in"],
+    lines: ["varunagrawal@avswealth.in"],
     href: "mailto:varunagrawal@avswealth.in",
   },
   {
