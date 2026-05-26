@@ -40,14 +40,25 @@
 .hero-content {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 2rem;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.hero-text { max-width: 680px; }
+.hero-text { max-width: 720px; }
+
+.hero-desc { margin-left: auto; margin-right: auto; }
+
+.hero-actions { justify-content: center; }
+
+.hero-founder { justify-content: center; }
+
+.hero-founder-name { justify-content: center; }
+
 
 .hero-badge {
   display: inline-block;
@@ -121,9 +132,10 @@
 /* ─── About ─────────────────────────────────────────────────── */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 4rem;
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 0;
+  max-width: 920px;
+  margin: 0 auto;
 }
 
 .about-img-col { display: flex; justify-content: center; }

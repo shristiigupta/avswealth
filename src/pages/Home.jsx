@@ -122,11 +122,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="hero-stats">
-            <div className="hstat"><span className="hstat-num">300+</span><span className="hstat-lbl">Happy Clients</span></div>
-            <div className="hstat"><span className="hstat-num">18</span><span className="hstat-lbl">Years Experience</span></div>
-            <div className="hstat"><span className="hstat-num">₹30Cr+</span><span className="hstat-lbl">Assets Managed</span></div>
-          </div>
+         
           <div className="hero-founder">
             <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
@@ -147,61 +143,6 @@ export default function Home() {
       <section className="section" id="about">
         <div className="container about-grid">
 
-          {/* Left visual column — stats + illustration */}
-          <div className="about-visual-col">
-            <div className="about-visual-card">
-              {/* Top stat */}
-              <div className="avc-stat-row">
-                <div className="avc-stat">
-                  <IconUsers className="avc-stat-icon" width="28" height="28" />
-                  <div><strong>300+</strong><span>Clients Served</span></div>
-                </div>
-                <div className="avc-divider" />
-                <div className="avc-stat">
-                  <IconCheckCircle className="avc-stat-icon" width="28" height="28" />
-                  <div><strong>18 Yrs</strong><span>Experience</span></div>
-                </div>
-              </div>
-
-              {/* Centre illustration */}
-              <div className="avc-illustration">
-                <div className="avc-rings">
-                  <div className="avc-ring r1" />
-                  <div className="avc-ring r2" />
-                  <div className="avc-ring r3" />
-                </div>
-                <div className="avc-center-icon">
-                  <IconBarChart width="36" height="36" />
-                </div>
-                {/* Floating labels */}
-                <div className="avc-float top-left">
-                  <IconShield width="14" height="14" />
-                  <span>Secure</span>
-                </div>
-                <div className="avc-float top-right">
-                  <IconCheckCircle width="14" height="14" />
-                  <span>AMFI</span>
-                </div>
-                <div className="avc-float bottom-left">
-                  <IconTrendUp width="14" height="14" />
-                  <span>Growth</span>
-                </div>
-                <div className="avc-float bottom-right">
-                  <IconLock width="14" height="14" />
-                  <span>Trusted</span>
-                </div>
-              </div>
-
-              {/* AUM badge */}
-              <div className="avc-aum-badge">
-                <IconBarChart width="20" height="20" />
-                <div>
-                  <strong>₹30 Cr+ AUM</strong>
-                  <span>Assets Under Management</span>
-                </div>
-              </div>
-            </div>
-          </div>
 
           {/* Right text content */}
           <div className="about-content">
