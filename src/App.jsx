@@ -24,6 +24,9 @@ import CapitalGainBonds from "./pages/products/CapitalGainBonds";
 import RBIBonds         from "./pages/products/RBIBonds";
 import PhysicalShares   from "./pages/products/PhysicalShares";
 import IEPF             from "./pages/products/IEPF";
+import GeneralInsurance from "./pages/products/GeneralInsurance";
+import NPS              from "./pages/products/NPS";
+import Loans            from "./pages/products/Loans";
 
 import "./index.css";
 
@@ -52,6 +55,9 @@ export default function App() {
             <Route path="/products/rbi-bonds"          element={<RBIBonds />} />
             <Route path="/products/physical-shares"    element={<PhysicalShares />} />
             <Route path="/products/iepf"               element={<IEPF />} />
+            <Route path="/products/general-insurance" element={<GeneralInsurance />} />
+            <Route path="/products/nps"               element={<NPS />} />
+            <Route path="/products/loans"             element={<Loans />} />
 
             {/* 404 */}
             <Route path="*" element={<NotFound />} />

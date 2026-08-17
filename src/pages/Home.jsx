@@ -5,6 +5,7 @@ import {
   IconTag, IconCheckCircle,
   IconTrendUp, IconBriefcase, IconLock, IconUmbrella, IconHeart,
   IconDollarSign, IconBank, IconFileText, IconScale,
+  IconActivity, IconPiggyBank, IconCreditCard,
 } from "../components/Icons";
 import "./Home.css";
 
@@ -86,6 +87,9 @@ export default function Home() {
     { Icon: IconBank, label: "RBI Bonds", to: "/products/rbi-bonds" },
     { Icon: IconFileText, label: "Physical Shares", to: "/products/physical-shares" },
     { Icon: IconScale, label: "Shares Transferred in IEPF", to: "/products/iepf" },
+    { Icon: IconActivity,    label: "General Insurance",  to: "/products/general-insurance" },
+    { Icon: IconPiggyBank,   label: "NPS / PPF",          to: "/products/nps" },
+    { Icon: IconCreditCard,  label: "Loans",              to: "/products/loans" },
   ];
 
   const usps = [

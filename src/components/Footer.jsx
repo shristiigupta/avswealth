@@ -10,6 +10,9 @@ const productLinks = [
   { label: "Capital Gain Bonds",         to: "/products/capital-gain-bonds" },
   { label: "RBI Bonds",                  to: "/products/rbi-bonds" },
   { label: "Physical Shares",            to: "/products/physical-shares" },
+  { label: "General Insurance",  to: "/products/general-insurance" },
+  { label: "NPS / PPF",         to: "/products/nps" },
+  { label: "Loans",             to: "/products/loans" },
 ];
 
 export default function Footer() {

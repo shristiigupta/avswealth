@@ -161,3 +161,22 @@ export const IconShield = (p) => (
     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
   </svg>
 );
+
+export const IconActivity = (p) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" {...p}>
+    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+  </svg>
+);
+export const IconPiggyBank = (p) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" {...p}>
+    <path d="M19 5c-1.5 0-2.8.4-3.9 1H11a5 5 0 0 0-5 5v3a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V9a4 4 0 0 0-3-3.87"/>
+    <path d="M3 13h2"/><circle cx="15.5" cy="11.5" r="1"/>
+    <path d="M17 19v2"/><path d="M11 19v2"/>
+  </svg>
+);
+export const IconCreditCard = (p) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" {...p}>
+    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+    <line x1="1" y1="10" x2="23" y2="10"/>
+  </svg>
+);

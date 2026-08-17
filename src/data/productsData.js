@@ -1,7 +1,9 @@
 import {
   IconTrendUp, IconBriefcase, IconLock, IconUmbrella,
   IconHeart, IconDollarSign, IconBank, IconFileText, IconScale,
+  IconActivity, IconPiggyBank, IconCreditCard,
 } from "../components/Icons";
+
 
 export const mutualFundData = {
   Icon: IconTrendUp,
@@ -172,4 +174,61 @@ export const iepfData = {
     { label: "Status Updates",            desc: "Transparent communication at every stage of the recovery process." },
   ],
   cta: { heading: "Reclaim Your IEPF Shares", sub: "Your shares belong to you. Let us help you navigate the process and get them back." },
+};
+
+export const generalInsuranceData = {
+  Icon: IconActivity,
+  title: "General Insurance",
+  tagline: "Protect your assets — home, vehicle, and valuables — with comprehensive general insurance.",
+  intro: [
+    "General insurance covers a wide range of non-life assets including your motor vehicle, home, shop, office, and other valuables against risks like theft, fire, accidents, and natural calamities.",
+    "At AVS, we help you identify the right coverage across motor, home, fire, marine, and commercial insurance from India's leading general insurers.",
+    "We compare policies across insurers to ensure you get maximum coverage at the most competitive premium, with a smooth claims process when you need it most.",
+  ],
+  reasons: [
+    { label: "Motor Insurance",   desc: "Comprehensive and third-party policies for cars, bikes, and commercial vehicles." },
+    { label: "Home Insurance",    desc: "Protect your home's structure and contents against fire, flood, theft, and more." },
+    { label: "Fire & Burglary",   desc: "Coverage for shops, offices, and commercial establishments against property risks." },
+    { label: "Cashless Claims",   desc: "Large network of garages and surveyors for fast, cashless claim settlement." },
+    { label: "Policy Comparison", desc: "We compare across insurers so you always get the best coverage at the right price." },
+  ],
+  cta: { heading: "Protect What Matters Most", sub: "Get a free quote on motor, home, or commercial insurance tailored to your needs." },
+};
+
+export const npsData = {
+  Icon: IconPiggyBank,
+  title: "NPS / PPF",
+  tagline: "Build a tax-efficient retirement corpus with government-backed long-term savings schemes.",
+  intro: [
+    "The National Pension System (NPS) and Public Provident Fund (PPF) are two of India's most powerful long-term, tax-efficient savings instruments, ideal for building a secure retirement corpus.",
+    "NPS offers market-linked returns with equity exposure, while PPF provides a guaranteed, tax-free return backed by the Government of India — together they form a well-rounded retirement strategy.",
+    "AVS guides you through account opening, contribution planning, fund selection under NPS, and helps you structure withdrawals and annuity choices at maturity.",
+  ],
+  reasons: [
+    { label: "Triple Tax Benefit",    desc: "NPS contributions qualify under 80C plus an additional ₹50,000 deduction under 80CCD(1B)." },
+    { label: "PPF Tax-Free Returns",  desc: "PPF interest and maturity proceeds are fully exempt from income tax." },
+    { label: "Government Backing",    desc: "Both schemes are regulated and backed by the Government of India — zero default risk." },
+    { label: "Flexible Contributions",desc: "Start NPS with as little as ₹500/month and PPF with ₹500/year." },
+    { label: "Retirement Planning",   desc: "We help you calculate the corpus needed and the right monthly contribution to get there." },
+  ],
+  cta: { heading: "Start Building Your Retirement Corpus", sub: "The earlier you start, the more compound interest works in your favour." },
+};
+
+export const loansData = {
+  Icon: IconCreditCard,
+  title: "Loans",
+  tagline: "Access the right loan at the right rate — home, business, personal, or loan against securities.",
+  intro: [
+    "Whether you need a home loan, business loan, personal loan, or a loan against your existing investments, AVS connects you with the right lending institution at competitive interest rates.",
+    "We work with leading banks and NBFCs to help you navigate the loan application process — from documentation to disbursement — minimising paperwork and maximising your approval chances.",
+    "For investors, we also facilitate Loan Against Mutual Funds (LAMF) and Loan Against Securities (LAS), allowing you to unlock liquidity without disrupting your investment portfolio.",
+  ],
+  reasons: [
+    { label: "Home Loans",              desc: "Competitive rates from leading banks with expert guidance on eligibility and documentation." },
+    { label: "Business Loans",          desc: "Working capital and term loans for SMEs and professionals through our banking partners." },
+    { label: "Loan Against Mutual Funds",desc: "Get instant liquidity against your mutual fund portfolio without redeeming your investments." },
+    { label: "Personal Loans",          desc: "Quick disbursal personal loans for medical, education, travel, or other needs." },
+    { label: "End-to-End Assistance",   desc: "We handle the comparison, application, and follow-up so you don't have to." },
+  ],
+  cta: { heading: "Find the Right Loan for Your Needs", sub: "Talk to us before you apply anywhere — the right guidance can save you lakhs in interest." },
 };
